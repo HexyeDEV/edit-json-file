@@ -3,4 +3,4 @@ Api wrapper to edit json file
 
 # DOCS
 
-https://purring-action-2bd.notion.site/Code-Snippets-DOCS-be2ecd596a37422282a8486396af9c26
+https://purring-action-2bd.notion.site/edit-json-file-DOCS-78491bcb654f42c38318837bf880888a
