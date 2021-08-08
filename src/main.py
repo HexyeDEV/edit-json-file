@@ -13,14 +13,14 @@ class editJsonFile:
             return json.load(open(file))
         except Exception as e:
             print(colored("[ERROR]\n", "red"))
-            print(colored(+e, "red"))
+            print(colored(e, "red"))
     
     def save(file):
         try:
             json.dump(json_file, open(f"{file}", "w"))
         except Exception as e:
             print(colored("[ERROR]\n", "red"))
-            print(colored(+e, "red"))
+            print(colored(e, "red"))
 
     def edit(file, value, key, *keys):
         try:
@@ -37,7 +37,7 @@ class editJsonFile:
                 json_file[key][valuee] = value
         except Exception as e:
             print(colored("[ERROR]\n", "red"))
-            print(colored(+e, "red"))
+            print(colored(e, "red"))
 
     def get(file, key, *keys):
         try:
@@ -51,4 +51,4 @@ class editJsonFile:
                 return value
         except Exception as e:
             print(colored("[ERROR]\n", "red"))
-            print(colored(+e, "red"))
+            print(colored(e, "red"))
