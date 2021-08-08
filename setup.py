@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="edit-json-file",
-    version="0.0.1",
+    version="0.0.3",
     author="Hexye",
     author_email="dragonsale22@gmail.com",
     description="An api wrapper to edit json files",
