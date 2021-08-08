@@ -1,4 +1,6 @@
 import json
+from termcolor import colored
+
 
 class editJsonFile:
     def __init__(file):
@@ -10,13 +12,13 @@ class editJsonFile:
             json_file = json.load(open(file))
             return json.load(open(file))
         except Exception as e:
-            print(e)
+            print(colored("[ERROR] "+e, "red"))
     
     def save(file):
         try:
             json.dump(json_file, open(f"{file}", "w"))
         except Exception as e:
-            print(e)
+            print(colored("[ERROR] "+e, "red"))
 
     def edit(file, value, key, *keys):
         try:
@@ -32,7 +34,7 @@ class editJsonFile:
                     keyadd = keyadd+1
                 json_file[key][valuee] = value
         except Exception as e:
-            print(e)
+            print(colored("[ERROR] "+e, "red"))
 
     def get(file, key, *keys):
         try:
@@ -45,4 +47,4 @@ class editJsonFile:
                         value = value[keyy]
                 return value
         except Exception as e:
-            print(e)
+            print(colored("[ERROR] "+e, "red"))
